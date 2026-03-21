@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- GitHub Pages SPA redirect handler -->
+    <script>
+      (function() {
+        var redirect = sessionStorage.getItem('spa-redirect');
+        if (redirect) {
+          sessionStorage.removeItem('spa-redirect');
+          window.history.replaceState(null, null, redirect);
+        }
+      })()
+    </script>
+
+    <!-- Primary Meta Tags -->
+    <title>Keon Wallet — Secure Starknet Wallet for Chrome & Android</title>
+    <meta name="title" content="Keon Wallet — Secure Starknet Wallet for Chrome & Android" />
+    <meta name="description" content="Keon Wallet is a non-custodial Starknet wallet with token swaps, WalletConnect, dApp browser, transaction simulation, and cross-platform support. Available as a Chrome extension and Android app." />
+    <meta name="author" content="Keon Wallet" />
+    <meta name="keywords" content="Starknet, wallet, crypto wallet, Chrome extension, Android wallet, WalletConnect, token swap, dApp browser, non-custodial, Web3, Layer 2, Ethereum, STRK, ETH" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#00daf3" />
+    <link rel="canonical" href="https://keon.io/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://keon.io/" />
+    <meta property="og:title" content="Keon Wallet — Secure Starknet Wallet for Chrome & Android" />
+    <meta property="og:description" content="Non-custodial Starknet wallet with token swaps, WalletConnect, dApp browser, and transaction simulation. Chrome extension & Android." />
+    <meta property="og:image" content="https://keon.io/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="Keon Wallet" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://keon.io/" />
+    <meta name="twitter:title" content="Keon Wallet — Secure Starknet Wallet" />
+    <meta name="twitter:description" content="Non-custodial Starknet wallet with swaps, WalletConnect, dApp browser, and cross-platform support." />
+    <meta name="twitter:image" content="https://keon.io/og-image.png" />
+    <meta name="twitter:site" content="@KeonWallet" />
+    <meta name="twitter:creator" content="@KeonWallet" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/keon-frontend/favicon.png" />
+    <link rel="apple-touch-icon" href="/keon-frontend/favicon.png" />
+
+    <!-- JSON-LD: Organization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Keon Wallet",
+      "url": "https://keon.io",
+      "logo": "https://keon.io/logo.png",
+      "description": "Keon Wallet is a non-custodial Starknet wallet available as a Chrome extension and Android app.",
+      "sameAs": [
+        "https://twitter.com/KeonWallet"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "url": "https://keon.io/contact",
+        "contactType": "customer support"
+      }
+    }
+    </script>
+
+    <!-- JSON-LD: WebSite (enables sitelinks search box in Google) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Keon Wallet",
+      "url": "https://keon.io",
+      "description": "Secure Starknet wallet with token swaps, WalletConnect, dApp browser, and cross-platform support.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Keon Wallet",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://keon.io/logo.png"
+        }
+      }
+    }
+    </script>
+
+    <!-- JSON-LD: SoftwareApplication (Chrome extension) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Keon Wallet",
+      "operatingSystem": "Chrome, Android",
+      "applicationCategory": "FinanceApplication",
+      "description": "A non-custodial Starknet wallet with token swaps powered by AVNU, WalletConnect v2 support, built-in dApp browser, transaction simulation, and customizable themes. Available as a Chrome browser extension and Android mobile app.",
+      "url": "https://keon.io",
+      "image": "https://keon.io/logo.png",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "featureList": [
+        "Token swaps via AVNU DEX aggregator",
+        "WalletConnect v2 protocol support",
+        "Built-in mobile dApp browser",
+        "Transaction simulation before signing",
+        "Multi-wallet and multi-account support",
+        "8 color themes with dark and light mode",
+        "Contacts and Starknet ID (.stark) resolution",
+        "Cloud backup with end-to-end encryption",
+        "Biometric unlock on mobile",
+        "Cross-platform: Chrome extension and Android"
+      ],
+      "author": {
+        "@type": "Organization",
+        "name": "Keon Wallet"
+      }
+    }
+    </script>
+
+    <!-- JSON-LD: FAQPage (common questions for rich snippets) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is Keon Wallet?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Keon Wallet is a non-custodial Starknet wallet available as a Chrome browser extension and Android mobile app. It supports token swaps, WalletConnect, a built-in dApp browser, and transaction simulation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Keon Wallet free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Keon Wallet is completely free to download and use. There are no subscription fees. Standard Starknet network fees apply for transactions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Keon Wallet support WalletConnect?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Keon Wallet fully supports WalletConnect v2 protocol, allowing you to connect to any Starknet dApp that supports WalletConnect by scanning a QR code or using a deep link."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Keon Wallet non-custodial?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Keon Wallet is fully non-custodial. Your private keys and seed phrase are encrypted and stored locally on your device. They never leave your device or are transmitted to any server."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What networks does Keon Wallet support?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Keon Wallet supports Starknet Mainnet and Starknet Sepolia testnet. You can switch between networks in the wallet settings."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- JSON-LD: BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://keon.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "About",
+          "item": "https://keon.io/about"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Terms",
+          "item": "https://keon.io/terms"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Privacy",
+          "item": "https://keon.io/privacy"
+        }
+      ]
+    }
+    </script>
+    <script type="module" crossorigin src="/keon-frontend/assets/index-DDkRmY10.js"></script>
+    <link rel="stylesheet" crossorigin href="/keon-frontend/assets/index-D0ZkwYjn.css">
+  </head>
+
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
