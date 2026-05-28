@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Keon Wallet</title>
+    <script>
+      // GitHub Pages SPA redirect: stores the path and redirects to index.html
+      sessionStorage.setItem('spa-redirect', window.location.pathname + window.location.search + window.location.hash);
+      window.location.replace(window.location.pathname.split('/').slice(0, 2).join('/') + '/');
+    </script>
+  </head>
+  <body></body>
+</html>
